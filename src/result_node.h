@@ -26,7 +26,7 @@ public:
      * 该结果会被写入到当前点的 _result 成员变量中，写入后不可更改，仅可使用 get_result 函数进行访问
      * @param _result 当前点所代表的结果
      */
-    explicit ResultNode(ResultType _result) : NodeBase();
+    explicit ResultNode(ResultType _result);
     /**
      * 析够函数，本节点不需要析构(使用默认的即可)，但是需要重写父类的无参析构函数
      */

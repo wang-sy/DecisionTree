@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DesitionTree.dir/main.cpp.o"
-  "DesitionTree"
+  "CMakeFiles/DesitionTree.dir/test/test.cc.obj"
+  "DesitionTree.exe"
+  "DesitionTree.exe.manifest"
   "DesitionTree.pdb"
+  "libDesitionTree.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

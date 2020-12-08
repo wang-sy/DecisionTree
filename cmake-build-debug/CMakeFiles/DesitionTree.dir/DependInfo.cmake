@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wangsy/Code/DesitionTree/main.cpp" "/home/wangsy/Code/DesitionTree/cmake-build-debug/CMakeFiles/DesitionTree.dir/main.cpp.o"
+  "C:/Users/wangsy/Desktop/ml_proj/DecisionTree/test/test.cc" "C:/Users/wangsy/Desktop/ml_proj/DecisionTree/cmake-build-debug/CMakeFiles/DesitionTree.dir/test/test.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -8,6 +8,7 @@
 #include "node_base.h"
 #include "result_node.h"
 #include <cstring>
+#include <vector>
 #include <map>
 
 /**
@@ -24,7 +25,7 @@
 template<class AttributeType>
 class DecisionNode: NodeBase {
 private:
-    std::stirng _attribute_name; // 属性名
+    std::string _attribute_name; // 属性名
 public:
 
     std::map<AttributeType, NodeBase*> _attribute_map; // 记录不同属性的映射关系
@@ -32,7 +33,7 @@ public:
      * 决策树节点的构造函数，用于构造一个决策数的决策节点
      * @param _attribute_name 字符串类型， 表示属性名称
      */
-    explicit DecisionNode(const std::stirng& _attribute_name): NodeBase();
+    explicit DecisionNode(const std::string& _attribute_name);
 
     /**
      * 向当前的决策节点中添加决策关系
@@ -62,7 +63,7 @@ public:
  * @param _attribute_name 字符串类型， 表示属性名称
  */
 template<class AttributeType>
-DecisionNode<AttributeType>::DecisionNode(const std::stirng &_attribute_name) {
+DecisionNode<AttributeType>::DecisionNode(const std::string &_attribute_name) {
     this->_is_result = false;
     this->_attribute_name = _attribute_name;
 }
@@ -101,8 +102,8 @@ void DecisionNode<AttributeType>::insert_decision(AttributeType _attribute, Node
 }
 
 template<class AttributeType>
-DecisionNode<AttributeType>::~DecisionNode() = default {
-    // 析构函数，不会执行过多操作
+DecisionNode<AttributeType>::~DecisionNode(){
+
 }
 
 #endif //DESITIONTREE_DECISION_NODE_H

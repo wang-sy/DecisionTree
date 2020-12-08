@@ -10,7 +10,7 @@ class NodeBase {
 protected:
     bool _is_result{}; // 标记当前节点是否是最终节点
 public:
-    virtual ~NodeBase() = 0;
+    virtual ~NodeBase();
     /**
      * 返回当前节点是否是一个结果类型的节点
      * @return 一个布尔值，表示当前的节点是否是一个结果类型的节点
@@ -25,6 +25,8 @@ public:
 bool NodeBase::is_result() const {
     return this->_is_result;
 }
+
+NodeBase::~NodeBase() = default;
 
 
 #endif //DESITIONTREE_NODE_BASE_H

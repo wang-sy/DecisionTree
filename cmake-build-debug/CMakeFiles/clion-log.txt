@@ -1,4 +1,4 @@
-/home/wangsy/文档/Tools/clion-2020.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wangsy/Code/DesitionTree
+"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\wangsy\Desktop\ml_proj\DecisionTree
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/wangsy/Code/DesitionTree/cmake-build-debug
+-- Build files have been written to: C:/Users/wangsy/Desktop/ml_proj/DecisionTree/cmake-build-debug
